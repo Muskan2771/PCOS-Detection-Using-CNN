@@ -137,8 +137,3 @@ This project is for educational purposes only and not a medical diagnosis tool.
 * Use Grad-CAM for explainability
 * Deploy on cloud
 
----
-
-## 💼 Resume Line
-
-Developed a CNN-based medical image classifier using transfer learning (MobileNetV2) to detect PCOS from ultrasound images and deployed it using Streamlit.

@@ -31,16 +31,14 @@ if uploaded_file is not None:
     # Predict
     prediction = model.predict(img_array)[0][0]
 
-    # Since:
-    # infected = 0
-    # notinfected = 1
+
 
     if prediction > 0.5:
 
         confidence = prediction * 100
 
         st.success(
-            f"No PCOS Detected ✅ ({confidence:.2f}%)"
+                 f"No PCOS Detected ✅ ({confidence:.2f}%)"
         )
 
     else:
@@ -48,7 +46,7 @@ if uploaded_file is not None:
         confidence = (1 - prediction) * 100
 
         st.error(
-            f"PCOS Detected ❌ ({confidence:.2f}%)"
+           f"PCOS Detected ❌ ({confidence:.2f}%)"
         )
 
 st.warning(
