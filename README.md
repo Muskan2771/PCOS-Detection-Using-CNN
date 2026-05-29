@@ -79,12 +79,11 @@ PCOS-Detection-using-CNN/
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
-```bash
 git clone https://github.com/your-username/pcos-detection-using-cnn.git
 cd pcos-detection-using-cnn
-2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 pip install -r requirements.txt
-3️⃣ Run the application
+### 3️⃣ Run the application
 streamlit run app.py
 🧠 How It Works
 User uploads a medical image
