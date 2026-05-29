@@ -1,6 +1,5 @@
-streamlit==1.58.0
-tensorflow==2.12.0
+streamlit
 numpy
-pandas
+pillow
 opencv-python
-scikit-learn
+keras
