@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+dataset/
+*.h5
+
+.venv/
+venv/
+
+.DS_Store

@@ -22,22 +22,29 @@ The project is deployed using Streamlit and provides a simple interface for imag
 
 ## 🎯 Project Objective
 
-The objective of this project is to build an end-to-end machine learning system that:
-- Processes medical images
-- Uses CNN-based model for prediction
-- Provides a simple web interface using Streamlit
-- Demonstrates deployment of ML model in real-world scenario
+To develop a deep learning-based medical image classification system capable of detecting Polycystic Ovary Syndrome (PCOS) from ultrasound images using Convolutional Neural Networks (CNNs), and deploy the model through an interactive Streamlit web application.
 
 ---
 
 ## 🧠 Features
 
-- Upload medical images for prediction
-- CNN-based deep learning model
-- Real-time inference
-- Simple and interactive Streamlit UI
-- Cloud deployable web app
+- CNN-based PCOS image classification
+- Medical image preprocessing pipeline
+- Data augmentation for improved generalization
+- Real-time prediction through Streamlit
+- Deep learning model training and evaluation
+- Cloud deployment support
 
+---
+## 🔄 Model Training Pipeline
+
+1. Load medical image dataset
+2. Apply preprocessing and normalization
+3. Perform data augmentation
+4. Train CNN model using TensorFlow/Keras
+5. Evaluate model performance
+6. Save trained model (.h5)
+7. Deploy model with Streamlit
 ---
 
 ## 🛠 Tech Stack

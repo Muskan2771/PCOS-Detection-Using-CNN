@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # Image size
 IMG_SIZE = 224
-BATCH_SIZE = 32
+BATCH_SIZE = 4
 
 # Dataset paths
 train_path = "dataset/train"
@@ -67,13 +67,19 @@ model.compile(
     metrics=['accuracy']
 )
 
-# Train
-model.fit(
+print("Starting training...")
+
+history = model.fit(
     train_data,
     validation_data=test_data,
     epochs=10
 )
 
+print("Training completed!")
+
+loss, accuracy = model.evaluate(test_data)
+
+print(f"Test Accuracy: {accuracy*100:.2f}%")
 # Save model
 model.save("model/cnn_model.h5")
 
